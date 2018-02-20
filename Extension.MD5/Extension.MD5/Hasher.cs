@@ -16,6 +16,13 @@ namespace Extension.MD5Hash
                 return GetMd5Hash(md5Hash, value);
             }
         }
+        public static string ToMD5(this string value, string Salt)
+        {
+            using (MD5 md5Hash = MD5.Create())
+            {
+                return GetMd5Hash(md5Hash, value + Salt);
+            }
+        }
         static string GetMd5Hash(MD5 md5Hash, string input)
         {
 
@@ -36,7 +43,7 @@ namespace Extension.MD5Hash
             // Return the hexadecimal string.
             return sBuilder.ToString();
         }
-        public static  bool VerifyMd5Hash(this string input, string hash)
+        public static bool VerifyMd5Hash(this string input, string hash)
         {
             using (MD5 md5 = MD5.Create())
             {
