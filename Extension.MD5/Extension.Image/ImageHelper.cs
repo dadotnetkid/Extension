@@ -14,8 +14,17 @@ namespace Extension.ImageExtension
         {
             using (MemoryStream ms = new MemoryStream())
             {
-                img.Save(ms, img.RawFormat);
-                return ms.ToArray();
+                try
+                {
+                    img.Save(ms, img.RawFormat);
+                    return ms.ToArray();
+                }
+                catch (Exception)
+                {
+
+                    return null;
+                }
+
             }
         }
         public static Image ByteToImage(this byte[] bytes)
@@ -28,8 +37,16 @@ namespace Extension.ImageExtension
         }
         public static string ImageToBase64(this Image img)
         {
-            var bytes = img.ImageToByte();
-            return Convert.ToBase64String(bytes);
+            try
+            {
+                var bytes = img.ImageToByte();
+                return Convert.ToBase64String(bytes);
+            }
+            catch (Exception)
+            {
+                return "";
+            }
+            
         }
         public static Image ByteToImage(this string value)
         {

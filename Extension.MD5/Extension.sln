@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Md5HasherSample", "Md5Hashe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extension.Image", "Extension.Image\Extension.Image.csproj", "{FFAA8436-344D-4B15-90C3-1FD18178D2C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageExtensionSample", "ImageExtensionSample\ImageExtensionSample.csproj", "{73491084-0798-4EE5-BC15-5B7B6A372FEE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{FFAA8436-344D-4B15-90C3-1FD18178D2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFAA8436-344D-4B15-90C3-1FD18178D2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFAA8436-344D-4B15-90C3-1FD18178D2C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73491084-0798-4EE5-BC15-5B7B6A372FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73491084-0798-4EE5-BC15-5B7B6A372FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73491084-0798-4EE5-BC15-5B7B6A372FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73491084-0798-4EE5-BC15-5B7B6A372FEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
